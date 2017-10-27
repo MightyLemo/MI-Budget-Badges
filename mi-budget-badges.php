@@ -15,29 +15,6 @@ function add_plugin_scripts() {
 }
 
 
-// add_action('init', 'myStartSession', 1);
-// function myStartSession() {
-//     if(!session_id()) {
-//         session_start();
-//     }
-// }
-
-
-// add_action('wp_footer', 'insert_my_footer');
-// function insert_my_footer() {
-// 	$options = get_option( 'budget_badge_settings' );
-	
-// 	$budgetLink = $options['budget_badge_text_field_0'];
-// 	$dataLink = $options['budget_badge_text_field_1'];
-	
-// 	$sessionToggleURL = plugins_url( '/inc/session.php', __FILE__ );
-	
-// 	include('inc/html.php');
-	
-// }
-
-
-
 // Add Shortcode
 function mi_budget_badges_shortcode( $atts ) {
 
@@ -61,11 +38,6 @@ function mi_budget_badges_shortcode( $atts ) {
 
 }
 add_shortcode( 'budget_badges', 'mi_budget_badges_shortcode' );
-
-
-
-
-
 
 
 
