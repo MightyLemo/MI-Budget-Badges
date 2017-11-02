@@ -27,10 +27,10 @@ function mi_budget_badges_shortcode( $atts ) {
 
 	$output .= '<div class="mi-budget-badges">';
 	$output .= '	<div class="badge transparency-reporting">';
-	$output .= '		<a href="' . $budgetLink . '" target="_blank"><img src="' . BUDGET_BADGE__PLUGIN_DIR . '/assets/img/transparency-reporting.png" /></a>';
+	$output .= '		<a href="' . $budgetLink . '" target="_blank" title="Click to view our Transparency Report."><img src="' . BUDGET_BADGE__PLUGIN_DIR . '/assets/img/transparency-reporting.png" alt="Transparency Reporting Logo" /></a>';
 	$output .= '	</div>';
 	$output .= '	<div class="badge mi-school-data">';
-	$output .= '		<a href="' . $dataLink . '" target="_blank"><img src="' . BUDGET_BADGE__PLUGIN_DIR . '/assets/img/mi_school_data_logo.png" /></a>';
+	$output .= '		<a href="' . $dataLink . '" target="_blank" title="Click to view our MI School Data report."><img src="' . BUDGET_BADGE__PLUGIN_DIR . '/assets/img/mi_school_data_logo.png" alt="MI School Data logo" /></a>';
 	$output .= '	</div>';
 	$output .= '</div>';
 	  
