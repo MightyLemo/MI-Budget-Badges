@@ -11,7 +11,8 @@ define( 'BUDGET_BADGE__PLUGIN_DIR', plugin_dir_url( __FILE__ ) );
 
 add_action( 'wp_enqueue_scripts', 'add_plugin_scripts' );
 function add_plugin_scripts() {
-    wp_enqueue_style('budget_badge_css', plugins_url( '/assets/css/budgetbadge.css', __FILE__ ), false, null);
+    wp_enqueue_style('budget_badge_css', plugins_url( '/assets/css/budget-badges.css', __FILE__ ), false, null);
+    wp_enqueue_script('budget_badge_js', plugins_url( '/assets/js/budget-badges.js', __FILE__ ), ['jquery'], null, true);
 }
 
 
@@ -26,11 +27,10 @@ function mi_budget_badges_shortcode( $atts ) {
 	$output = '';
 
 	$output .= '<div class="mi-budget-badges">';
-	$output .= '	<div class="badge transparency-reporting">';
-	$output .= '		<a href="' . $budgetLink . '" target="_blank" title="Click to view our Transparency Report."><img src="' . BUDGET_BADGE__PLUGIN_DIR . '/assets/img/transparency-reporting.png" alt="Transparency Reporting Logo" /></a>';
-	$output .= '	</div>';
-	$output .= '	<div class="badge mi-school-data">';
-	$output .= '		<a href="' . $dataLink . '" target="_blank" title="Click to view our MI School Data report."><img src="' . BUDGET_BADGE__PLUGIN_DIR . '/assets/img/mi_school_data_logo.png" alt="MI School Data logo" /></a>';
+	$output .= '	<a href="' . $budgetLink . '" target="_blank" class="badge transparency-reporting" title="Click to view our Transparency Report.">TRANSPARENCY REPORTING</a> ';
+	$output .= '	<a href="' . $dataLink . '" target="_blank" class="badge mi-school-data" title="Click to view our MI School Data report.">MISCHOOL DATA</a>';
+	$output .= '	<div class="badges-text">';
+	$output .= '		Click here for more information <i class="fa fa-caret-down" aria-hidden="true"></i>';
 	$output .= '	</div>';
 	$output .= '</div>';
 	  
@@ -38,6 +38,14 @@ function mi_budget_badges_shortcode( $atts ) {
 
 }
 add_shortcode( 'budget_badges', 'mi_budget_badges_shortcode' );
+
+
+add_action('wp_footer', 'footer_badges');
+function footer_badges() {
+	if (is_home() || is_front_page()) {
+		echo do_shortcode('[budget_badges]');
+	}
+}
 
 
 

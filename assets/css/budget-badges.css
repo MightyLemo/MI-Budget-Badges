@@ -1,0 +1,92 @@
+
+
+
+.mi-budget-badges {
+	padding: .5em;
+	text-align: center;
+	position: fixed;
+	z-index: 300;
+	background: white;
+	width: 100%;
+	bottom: 0;
+	box-shadow: 0 -2px 5px rgba(0,0,0,.3);
+}
+
+
+.mi-budget-badges .badge {
+	display: inline-block;
+	margin: 1em;
+	text-align: center;
+	height: 150px;
+	width: 150px;
+	background: center center no-repeat;
+	background-size: contain;
+	text-indent: -10000px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.mi-budget-badges .badge.transparency-reporting {
+	background-image: url(../img/transparency-reporting.png);
+}
+
+.mi-budget-badges .badge.mi-school-data {
+	background-image: url(../img/mi_school_data_logo.png);
+}
+
+
+.mi-budget-badges.min .badge {
+	height: 26px;
+	width: auto;
+	padding-left: 35px;
+	text-indent: 0;
+	background-position-x: 0;
+	color: black;
+	font-size: 12px;
+	margin: 0 1em;
+	padding-top: 3px;
+}
+
+
+
+
+
+.mi-budget-badges.min .badge.transparency-reporting {
+	background-image: url(../img/transparency-reporting-no-text.png);
+}
+
+.mi-budget-badges.min .badge.mi-school-data {
+	background-image: url(../img/mi_school_data_logo-no-text.png);
+}
+
+.mi-budget-badges.min .badges-text {
+	display: inline-block;
+	margin-left: 1em;
+}
+
+.mi-budget-badges .badges-text {
+	display: none;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mi-budget-badges .badge img {
+	max-height: 8em;
+}
+
+
+
+
