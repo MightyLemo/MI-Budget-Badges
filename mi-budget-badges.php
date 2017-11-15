@@ -1,7 +1,7 @@
 <?php 
 /*Plugin Name: MI Budget Badge - By Bit Spring
 Description: Provides a MI Data Budget Badges
-Version: 1.0.1
+Version: 1.1
 Author: Bit Spring Web Services
 Author URI: http://bit-spring.com/
 License: GPLv2
