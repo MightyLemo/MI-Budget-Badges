@@ -29,8 +29,14 @@ function mi_budget_badges_shortcode( $atts ) {
 	$output .= '<div class="mi-budget-badges">';
 	$output .= '	<a href="' . $budgetLink . '" target="_blank" class="badge transparency-reporting" title="Click to view our Transparency Report.">TRANSPARENCY REPORTING</a> ';
 	$output .= '	<a href="' . $dataLink . '" target="_blank" class="badge mi-school-data" title="Click to view our MI School Data report.">MISCHOOL DATA</a>';
+/*
 	$output .= '	<div class="badges-text">';
 	$output .= '		Click here for more information <i class="fa fa-caret-down" aria-hidden="true"></i>';
+	$output .= '	</div>';
+*/
+	$output .= '	<div class="expander-toggle">';
+	$output .= '		<span class="trigger expand">Expand <i class="fa fa-caret-up" aria-hidden="true"></i></span>';
+	$output .= '		<span class="trigger hide">Hide <i class="fa fa-times" aria-hidden="true"></i></span>';
 	$output .= '	</div>';
 	$output .= '</div>';
 	  

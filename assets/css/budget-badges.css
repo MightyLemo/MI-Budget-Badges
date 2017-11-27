@@ -71,6 +71,41 @@
 
 
 
+.expander-toggle {
+	display: inline-block;
+	
+}
+
+
+.expander-toggle .trigger {
+	background: #808080;
+	color: #fdfcfa;
+	text-transform: uppercase;
+	padding: 0px 5px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.expander-toggle .expand {
+	display: none;
+}
+
+.mi-budget-badges.min .expander-toggle .expand {
+	display: block;
+}
+
+.mi-budget-badges.min .expander-toggle .hide {
+	display: none;
+}
+
+
+.expander-toggle i {
+	background: #9a9899;
+	padding: 5px;
+	display: inline-block;
+	margin: 0 -5px 0 5px;
+}
+
 
 
 
