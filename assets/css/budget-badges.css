@@ -73,51 +73,29 @@
 
 .expander-toggle {
 	display: inline-block;
-	
 }
-
 
 .expander-toggle .trigger {
-	background: #808080;
-	color: #fdfcfa;
-	text-transform: uppercase;
-	padding: 0px 5px;
-	display: inline-block;
-	cursor: pointer;
-	background: url(img/expand.svg) no-repeat center center;
-	background-size: contain;
-}
-
-.expander-toggle .expand {
-	display: none;
-}
-
-.mi-budget-badges.min .expander-toggle .expand {
 	display: block;
-
-	height: 1em;
-	width: 1em;
-	background: url(img/expand.svg) no-repeat center center;
-	background-size: contain;
+	background: url(../img/hide.svg) no-repeat center right;
+	height: 2em;
+	width: 6em;
+	cursor: pointer;
 }
 
-.mi-budget-badges.min .expander-toggle .hide {
+.trigger.show {
 	display: none;
-
-	height: 1em;
-	width: 1em;
-	background: url(img/expand.svg) no-repeat center center;
-	background-size: 1em;
+	background: url(../img/show.svg) no-repeat center right;
 }
 
 
-.expander-toggle i {
-	background: #9a9899;
-	padding: 5px;
-	display: inline-block;
-	margin: 0 -5px 0 5px;
+.mi-budget-badges.min .trigger.show {
+	display: block;
 }
 
+.mi-budget-badges.min .trigger.hide {
+	display: none;
+}
 
 
 
