@@ -84,6 +84,8 @@
 	padding: 0px 5px;
 	display: inline-block;
 	cursor: pointer;
+	background: url(img/expand.svg) no-repeat center center;
+	background-size: contain;
 }
 
 .expander-toggle .expand {
@@ -92,10 +94,20 @@
 
 .mi-budget-badges.min .expander-toggle .expand {
 	display: block;
+
+	height: 1em;
+	width: 1em;
+	background: url(img/expand.svg) no-repeat center center;
+	background-size: contain;
 }
 
 .mi-budget-badges.min .expander-toggle .hide {
 	display: none;
+
+	height: 1em;
+	width: 1em;
+	background: url(img/expand.svg) no-repeat center center;
+	background-size: 1em;
 }
 
 

@@ -35,8 +35,10 @@ function mi_budget_badges_shortcode( $atts ) {
 	$output .= '	</div>';
 */
 	$output .= '	<div class="expander-toggle">';
-	$output .= '		<span class="trigger expand">Expand <i class="fa fa-caret-up" aria-hidden="true"></i></span>';
-	$output .= '		<span class="trigger hide">Hide <i class="fa fa-times" aria-hidden="true"></i></span>';
+//	$output .= '		<span class="trigger expand">Expand <i class="fa fa-caret-up" aria-hidden="true"></i></span>';
+//	$output .= '		<span class="trigger hide">Hide <i class="fa fa-times" aria-hidden="true"></i></span>';
+	$output .= '		<span class="trigger expand">Expand <i class="show" aria-hidden="true"></i></span>';
+	$output .= '		<span class="trigger hide">Hide <i class="hide" aria-hidden="true"></i></span>';
 	$output .= '	</div>';
 	$output .= '</div>';
 	  
