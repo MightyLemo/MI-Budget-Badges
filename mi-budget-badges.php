@@ -11,7 +11,7 @@ define( 'BUDGET_BADGE__PLUGIN_DIR', plugin_dir_url( __FILE__ ) );
 
 add_action( 'wp_enqueue_scripts', 'add_plugin_scripts' );
 function add_plugin_scripts() {
-    wp_enqueue_style('budget_badge_css', plugins_url( '/assets/css/budget-badges.css', __FILE__ ), false, null);
+    wp_enqueue_style('budget_badge_css', plugins_url( '/assets/css/budget-badges.css', __FILE__ ), false, '20171204');
     wp_enqueue_script('budget_badge_js', plugins_url( '/assets/js/budget-badges.js', __FILE__ ), ['jquery'], null, true);
 }
 
@@ -30,8 +30,8 @@ function mi_budget_badges_shortcode( $atts ) {
 	$output .= '	<a href="' . $budgetLink . '" target="_blank" class="badge transparency-reporting" title="Click to view our Transparency Report.">TRANSPARENCY REPORTING</a> ';
 	$output .= '	<a href="' . $dataLink . '" target="_blank" class="badge mi-school-data" title="Click to view our MI School Data report.">MISCHOOL DATA</a>';
 	$output .= '	<div class="expander-toggle" aria-hidden="true">';
-	$output .= '		<div class="trigger show"></div>';
-	$output .= '		<div class="trigger hide"></div>';
+	$output .= '		<div class="trigger showBadges"></div>';
+	$output .= '		<div class="trigger hideBadges"></div>';
 	$output .= '	</div>';
 	$output .= '</div>';
 	  

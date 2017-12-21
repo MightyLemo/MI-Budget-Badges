@@ -5,7 +5,7 @@
 	padding: .5em;
 	text-align: center;
 	position: fixed;
-	z-index: 300;
+	z-index: 2000;
 	background: white;
 	width: 100%;
 	bottom: 0;
@@ -76,34 +76,30 @@
 }
 
 .expander-toggle .trigger {
-	display: block;
 	background: url(../img/hide.svg) no-repeat center right;
 	height: 2em;
 	width: 6em;
 	cursor: pointer;
 }
 
-.trigger.show {
-	display: none;
+.expander-toggle .trigger.hideBadges {
+	display: block !important;
+}
+
+
+.expander-toggle .trigger.showBadges {
+	display: none !important;
 	background: url(../img/show.svg) no-repeat center right;
 }
 
 
-.mi-budget-badges.min .trigger.show {
-	display: block;
+.mi-budget-badges.min .trigger.showBadges {
+	display: block !important;
 }
 
-.mi-budget-badges.min .trigger.hide {
-	display: none;
+.mi-budget-badges.min .trigger.hideBadges {
+	display: none !important;
 }
-
-
-
-
-
-
-
-
 
 
 
